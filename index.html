@@ -17,9 +17,8 @@
             height: 100vh;
             box-sizing: border-box;
         }
-      
+
         #timer {
-            color: #eeeeee;
             text-align: center;
             text-transform: uppercase;
             font-size: 0.7em;
@@ -35,70 +34,45 @@
 
         .days {
             background: #91167e;
+            color: #f1e9db; /* Couleur des caractères */
         }
 
         .hours {
             background: #f1e9db;
-            color: #183059;
+            color: #2d415c; /* Couleur des caractères */
         }
 
         .minutes {
             background: #2d415c;
+            color: #f1e9db; /* Couleur des caractères */
         }
 
         .seconds {
             background: #fea303;
+            color: #2d415c; /* Couleur des caractères */
         }
 
         .numbers {
             font-family: 'Montserrat', sans-serif;
-            color: #183059;
             font-size: 4em;
             text-align: center;
-        }
-
-        .white {
-            position: absolute;
-            background: #eeeeee;
-            height: 85px;
-            width: 75px;
-            left: 30%;
-            top: 2%;
-        }
-
-        .red {
-            position: absolute;
-            background: #EF2F3C;
-            left: 18%;
-            top: 9%;
-            height: 65px;
-            width: 70px;
-        }
-
-        .blue {
-            position: absolute;
-            background: #276FBF;
-            height: 80px;
-            width: 80px;
-            left: 60%;
-            top: 5%;
         }
     </style>
 </head>
 <body>
     <div id="timer">
-        <div class="days"> 
+        <div class="days">
             <div id="days" class="numbers"></div>jours
-        </div> 
-        <div class="hours"> 
+        </div>
+        <div class="hours">
             <div id="hours" class="numbers"></div>heures
-        </div> 
-        <div class="minutes"> 
+        </div>
+        <div class="minutes">
             <div id="minutes" class="numbers"></div>minutes
-        </div> 
-        <div class="seconds"> 
+        </div>
+        <div class="seconds">
             <div id="seconds" class="numbers"></div>secondes
-        </div> 
+        </div>
     </div>
     <script>
         const myDate = new Date('Dec 31, 2024 00:00:00').getTime();
